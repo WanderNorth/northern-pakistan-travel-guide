@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rent a Car in Skardu: A Practical Guide to Vehicles, Drivers and Road Trips</title>
+<meta name="description" content="Planning to hire a vehicle around Skardu? Compare self-drive and driver options, choose the right vehicle for lakes, desert and Deosai, and use a simple checklist before you book.">
+<style>
+:root{
+  --deep:#143A44; --deeper:#0C2830; --lake:#2D7385; --mist:#E3EDEE; --line:#D3E1E4;
+  --bg:#F6F8F7; --ink:#12272E; --muted:#3B5660; --accent:#B4530A; --sun:#F2B880; --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:18px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
+p{margin:0 0 16px}
+a{color:var(--accent)}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:10px 16px;z-index:20;color:var(--ink)}
+.skip:focus{left:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+.site-header{background:var(--deeper);position:sticky;top:0;z-index:10}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0}
+.brand{font-family:Georgia,serif;font-weight:700;font-size:22px;color:#fff;text-decoration:none}
+.menu-btn{display:none;background:transparent;border:2px solid #fff;color:#fff;border-radius:10px;padding:8px 14px;font-size:16px;cursor:pointer;min-height:44px}
+.nav ul{display:flex;gap:4px 24px;list-style:none;margin:0;padding:0}
+.nav a{color:#E8F2F4;text-decoration:none;font-size:16px;display:inline-block;padding:10px 0}
+.nav a:hover{color:var(--sun)}
+
+.hero{position:relative;background:linear-gradient(180deg,#143A44 0%,#21566A 100%);color:#fff;overflow:hidden;padding:0}
+.hero .wrap{position:relative;z-index:2;padding-top:90px;padding-bottom:210px}
+.hero-copy{max-width:680px;animation:rise .8s ease both}
+.eyebrow{font-size:15px;letter-spacing:.1em;text-transform:uppercase;color:var(--sun);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5.2vw,56px);margin-bottom:20px}
+.lead{font-size:clamp(18px,2.2vw,21px);color:#DDECEF;margin-bottom:30px}
+.hero-art{position:absolute;left:0;right:0;bottom:0;width:100%;height:auto;display:block;z-index:1}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:15px 32px;border-radius:999px;border:2px solid var(--accent);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn.ghost{background:transparent;border-color:#fff}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap}
+
+section{padding:80px 0}
+.alt{background:var(--mist)}
+.head{max-width:740px;margin-bottom:40px}
+.head h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}
+.head p{color:var(--muted);margin:0}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.panel h3{font-size:22px;margin-bottom:12px}
+.panel ul{margin:0;padding-left:20px;color:var(--muted)}
+.panel li{margin-bottom:10px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(20,58,68,.15)}
+.card svg{display:block;width:100%;height:auto}
+.card-body{padding:22px 22px 26px}
+.card h3{font-size:22px;margin-bottom:8px}
+.card p{margin:0;color:var(--muted);font-size:17px}
+
+.item-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.item h3{font-size:21px;margin-bottom:10px}
+.item p{margin:0;color:var(--muted);font-size:17px}
+
+.checklist{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px 32px}
+.checklist li{position:relative;padding-left:34px;color:var(--muted)}
+.checklist li::before{content:"";position:absolute;left:0;top:8px;width:18px;height:10px;border-left:3px solid var(--accent);border-bottom:3px solid var(--accent);transform:rotate(-45deg) scale(.9)}
+.checklist strong{color:var(--ink)}
+
+.faq{max-width:820px}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:0 22px}
+summary{cursor:pointer;font-weight:600;padding:18px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;line-height:1;color:var(--accent)}
+details[open] summary::after{content:"\2212"}
+details p{color:var(--muted);padding-bottom:18px;margin:0}
+
+.cta{background:var(--deep);color:#fff;text-align:center}
+.cta h2{font-size:clamp(28px,4.5vw,44px);margin-bottom:14px}
+.cta p{max-width:580px;margin:0 auto 28px;color:#DDECEF}
+
+footer{background:var(--deeper);color:#C9DCE0;padding:48px 0 28px;font-size:16px}
+.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:28px}
+footer h3{font-size:17px;color:#fff;margin-bottom:12px;font-family:system-ui,sans-serif}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:8px}
+footer a{color:#E8F2F4}
+footer a:hover{color:var(--sun)}
+.legal{border-top:1px solid rgba(255,255,255,.15);padding-top:18px;font-size:14px}
+
+@media (max-width:820px){
+  .two,.foot{grid-template-columns:1fr;gap:28px}
+  section{padding:60px 0}
+  .hero .wrap{padding-top:56px;padding-bottom:140px}
+  .menu-btn{display:inline-block}
+  .nav{display:none;width:100%}
+  .nav.open{display:block}
+  .bar{flex-wrap:wrap}
+  .nav ul{flex-direction:column;gap:0;padding-bottom:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-copy{animation:none}
+  .card,.btn{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Skardu Road Guide</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="nav" id="siteNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#options">Driver or self-drive</a></li>
+        <li><a href="#vehicles">Vehicles</a></li>
+        <li><a href="#routes">Day trips</a></li>
+        <li><a href="#checklist">Checklist</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Transport guide, Gilgit-Baltistan</p>
+      <h1>Rent a Car in Skardu: A Practical Guide to Vehicles, Drivers and Road Trips</h1>
+      <p class="lead">The lakes, the cold desert and the high plateau are all within reach of Skardu, but only if you have the right vehicle and a realistic plan. Here is how to think it through.</p>
+      <div class="btn-row">
+        <a class="btn" href="https://ilyasskardutravelsandtours.com/">Rent a Car in Skardu</a>
+        <a class="btn ghost" href="#checklist">Booking checklist</a>
+      </div>
+    </div>
+  </div>
+  <svg class="hero-art" viewBox="0 0 1440 260" preserveAspectRatio="none" role="img" aria-label="Illustration of a winding mountain road below snow-capped peaks near Skardu">
+    <circle cx="1210" cy="68" r="32" fill="#F2B880"/>
+    <path d="M0 260 L0 160 L210 54 L360 140 L560 18 L740 150 L900 76 L1100 180 L1260 96 L1440 160 L1440 260 Z" fill="#2D7385"/>
+    <path d="M320 260 L560 18 L680 126 L790 66 L1010 260 Z" fill="#1D5368"/>
+    <path d="M560 18 L518 84 L546 76 L562 98 L582 74 L606 86 Z" fill="#F6F8F7"/>
+    <path d="M210 54 L182 98 L204 92 L216 106 L232 90 L246 98 Z" fill="#F6F8F7"/>
+    <path d="M0 260 L0 206 Q380 176 760 206 T1440 196 L1440 260 Z" fill="#5E8F6A"/>
+    <path d="M-20 252 Q300 228 620 236 T1460 222" fill="none" stroke="#E7D3A8" stroke-width="16"/>
+    <path d="M-20 252 Q300 228 620 236 T1460 222" fill="none" stroke="#8A7A5A" stroke-width="2" stroke-dasharray="14 12"/>
+  </svg>
+</section>
+
+<section id="overview">
+  <div class="wrap two">
+    <div>
+      <div class="head" style="margin-bottom:20px"><h2>Why transport matters in Skardu</h2></div>
+      <p>Skardu is a base rather than a single destination. The sights people come for are spread across the valley: lakes on one side, dunes on another, a high plateau further up. Public transport between them is limited, so most visitors arrange their own vehicle for at least part of the trip.</p>
+      <p>Distances look short on a map, but mountain roads are slow. A drive of a few dozen kilometres can take a good part of a morning, and conditions can change after rain or a landslide. Choosing the right vehicle and the right kind of arrangement helps you spend more time at the viewpoint and less time worrying about the road.</p>
+      <p>This guide covers the main decisions: whether to take a driver, which kind of vehicle suits your route, what a day trip involves, and what to check before you commit.</p>
+    </div>
+    <aside class="panel" aria-label="Quick facts">
+      <h3>Good to know</h3>
+      <ul>
+        <li>Shangrila Lake is roughly 20 km from Skardu town</li>
+        <li>Deosai National Park sits on a plateau averaging about 4,100 m</li>
+        <li>Road conditions can change quickly with weather</li>
+        <li>High routes are usually open for a short summer season</li>
+        <li>Fuel and repair options thin out away from town</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="options" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>With a driver or self-drive?</h2>
+      <p>Both are possible. The right choice depends on your experience, your route and how much you want to manage yourself.</p>
+    </div>
+    <div class="item-grid">
+      <div class="item">
+        <h3>Hiring with a local driver</h3>
+        <p>A local driver knows the road surface, the slow corners and the places where rockfall is common. You can concentrate on the scenery, and a driver can often suggest timings and stops that suit the light and the weather. This is the option many first-time visitors choose.</p>
+      </div>
+      <div class="item">
+        <h3>Driving yourself</h3>
+        <p>Self-drive gives flexibility, but it suits experienced drivers who are comfortable on narrow, unpaved mountain roads with steep drops. Check licence and insurance requirements, and agree clearly with the owner who is responsible for damage and breakdowns.</p>
+      </div>
+      <div class="item">
+        <h3>A mix of both</h3>
+        <p>Some travelers use easy roads around town on their own and book a driver for demanding days such as the high plateau. This keeps costs flexible while putting experience where it matters most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vehicles">
+  <div class="wrap">
+    <div class="head">
+      <h2>Choosing the right vehicle</h2>
+      <p>Match the vehicle to the roads you plan to take, not just to the number of passengers.</p>
+    </div>
+    <div class="cards">
+
+      <article class="card">
+        <svg viewBox="0 0 400 200" role="img" aria-label="Illustration of a small saloon car on a paved road">
+          <rect width="400" height="200" fill="#DCEAEE"/>
+          <path d="M0 140 L400 140 L400 200 L0 200 Z" fill="#8FA7AE"/>
+          <path d="M90 130 L120 100 L220 100 L260 130 Z" fill="#2D7385"/>
+          <rect x="70" y="124" width="220" height="26" rx="8" fill="#1D5368"/>
+          <circle cx="115" cy="152" r="14" fill="#12272E"/><circle cx="245" cy="152" r="14" fill="#12272E"/>
+        </svg>
+        <div class="card-body">
+          <h3>Saloon car</h3>
+          <p>Economical and comfortable for paved routes around town and towards the Kachura lakes. Low ground clearance makes it a poor match for rough tracks and high-altitude roads.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <svg viewBox="0 0 400 200" role="img" aria-label="Illustration of a high-clearance SUV on a gravel road">
+          <rect width="400" height="200" fill="#E6EEEF"/>
+          <path d="M0 140 L400 140 L400 200 L0 200 Z" fill="#B9A67C"/>
+          <path d="M85 120 L110 84 L235 84 L270 120 Z" fill="#B4530A"/>
+          <rect x="65" y="116" width="225" height="32" rx="8" fill="#8C3F06"/>
+          <circle cx="112" cy="152" r="18" fill="#12272E"/><circle cx="245" cy="152" r="18" fill="#12272E"/>
+        </svg>
+        <div class="card-body">
+          <h3>SUV or 4x4</h3>
+          <p>Higher clearance and better grip for gravel, stream crossings and rough sections. Many travelers choose this type for Deosai and other high routes.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <svg viewBox="0 0 400 200" role="img" aria-label="Illustration of a passenger van on a mountain road">
+          <rect width="400" height="200" fill="#DDEBEE"/>
+          <path d="M0 140 L400 140 L400 200 L0 200 Z" fill="#8FA7AE"/>
+          <rect x="60" y="80" width="250" height="62" rx="12" fill="#2D7385"/>
+          <rect x="80" y="92" width="50" height="26" fill="#DDEBEE"/><rect x="140" y="92" width="50" height="26" fill="#DDEBEE"/><rect x="200" y="92" width="50" height="26" fill="#DDEBEE"/>
+          <circle cx="110" cy="150" r="16" fill="#12272E"/><circle cx="260" cy="150" r="16" fill="#12272E"/>
+        </svg>
+        <div class="card-body">
+          <h3>Van or coaster</h3>
+          <p>Sensible for families and groups sharing one vehicle and one itinerary. Check that the route you want is suitable for a larger vehicle before you book.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="routes" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>Day trips by road from Skardu</h2>
+      <p>Typical outings, with the kind of road you can expect. Always check current conditions before you set off.</p>
+    </div>
+    <div class="item-grid">
+      <div class="item">
+        <h3>Shangrila and Kachura lakes</h3>
+        <p>A short drive out of town on the Skardu-Khaplu road. Suitable for most vehicles in good weather, and a relaxed first day while you adjust to the altitude.</p>
+      </div>
+      <div class="item">
+        <h3>Sarfaranga Cold Desert</h3>
+        <p>Close to town, with sand dunes and mountain views. Go early or late in the day for softer light and cooler temperatures.</p>
+      </div>
+      <div class="item">
+        <h3>Deosai National Park</h3>
+        <p>A high plateau with a short visiting season and a rough road. A high-clearance vehicle and an early start are commonly recommended, along with warm layers and spare food and water.</p>
+      </div>
+      <div class="item">
+        <h3>Shigar Valley</h3>
+        <p>A scenic drive to historic buildings and villages. Allow a full day, with time to walk around rather than just photograph from the road.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planning">
+  <div class="wrap two">
+    <div>
+      <div class="head" style="margin-bottom:20px"><h2>Arranging your vehicle</h2></div>
+      <p>Compare a few options before you decide. Ask what the price includes, how many days the vehicle is available, whether a driver, fuel and tolls are covered, and who pays if the route changes because of weather.</p>
+      <p>If you prefer to organise everything in one place, you can look at <a href="https://ilyasskardutravelsandtours.com/">Rent a Car in Skardu</a> options alongside tour planning, so that transport and itinerary fit together from the start.</p>
+      <p>Whichever provider you use, get the main terms confirmed in writing, and share your planned route so the vehicle you are offered matches the roads you will actually drive.</p>
+    </div>
+    <aside class="panel" aria-label="Questions to ask">
+      <h3>Questions to ask first</h3>
+      <ul>
+        <li>Is a driver included, and for how many hours each day?</li>
+        <li>Is fuel included or charged separately?</li>
+        <li>What happens if a road is closed on the day?</li>
+        <li>Is the vehicle suitable for the high routes I want?</li>
+        <li>What are the cancellation and change terms?</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="checklist" class="alt">
+  <div class="wrap">
+    <div class="head">
+      <h2>Before you hit the road</h2>
+      <p>A short checklist that prevents the most common problems.</p>
+    </div>
+    <ul class="checklist">
+      <li><strong>Vehicle condition:</strong> look at tyres, brakes, lights and the spare wheel, and make sure tools are on board.</li>
+      <li><strong>Documents:</strong> carry identification, the vehicle paperwork and any permits your route requires.</li>
+      <li><strong>Fuel:</strong> fill up in town before heading out, as stations are fewer on high routes.</li>
+      <li><strong>Weather and roads:</strong> check conditions the evening before and again in the morning.</li>
+      <li><strong>Timing:</strong> start early and aim to be off high roads well before dark.</li>
+      <li><strong>Supplies:</strong> carry water, snacks, warm clothing and a charged phone or power bank.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <div class="head"><h2>Frequently asked questions</h2></div>
+
+    <details>
+      <summary>Is it better to hire a vehicle with a driver?</summary>
+      <p>For first-time visitors this is often the easier option, because the driver knows the roads and conditions. Self-drive can work for experienced mountain drivers on simpler routes.</p>
+    </details>
+    <details>
+      <summary>Do I need a 4x4 in Skardu?</summary>
+      <p>Not for every route. Paved roads around town and to the Kachura lakes suit most vehicles. For rough high-altitude roads such as Deosai, a high-clearance vehicle is commonly preferred.</p>
+    </details>
+    <details>
+      <summary>How early should I start a day trip?</summary>
+      <p>Early starts help you avoid afternoon weather changes and give you a buffer for slow sections. Plan to finish the most demanding stretches well before dark.</p>
+    </details>
+    <details>
+      <summary>What if a road is closed or the weather turns bad?</summary>
+      <p>Closures can happen after heavy rain, snow or landslides. Keep a spare day in your schedule and ask in advance how changes to the plan are handled.</p>
+    </details>
+    <details>
+      <summary>When is the best time to travel by road?</summary>
+      <p>Late spring to early autumn is the usual window, when most routes are open. High roads have a shorter season, so confirm current conditions close to your dates.</p>
+    </details>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Ready to plan your trip?</h2>
+    <p>See the available travel arrangements and choose the option that suits your route and dates.</p>
+    <a class="btn" href="https://ilyasskardutravelsandtours.com/">View Travel Options</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h3>Skardu Road Guide</h3>
+        <p>An independent guide to getting around Skardu and the surrounding valleys in Gilgit-Baltistan.</p>
+      </div>
+      <div>
+        <h3>On this page</h3>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#vehicles">Vehicles</a></li>
+          <li><a href="#routes">Day trips</a></li>
+          <li><a href="#checklist">Checklist</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Travel help</h3>
+        <ul>
+          <li><a href="https://ilyasskardutravelsandtours.com/">Travel arrangements</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p style="margin:0">&copy; Skardu Road Guide. Road conditions, entry rules and prices change, so confirm current details before you travel.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('siteNav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+})();
+</script>
+</body>
+</html>
